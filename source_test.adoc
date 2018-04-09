@@ -1,0 +1,25 @@
+= Source highlight 기능
+:toc:
+:icons:
+:numbered:
+
+== 소스 하이라이트를 위한 설정
+
+.소스 하이라이트 지정
+----
+sudo apt-get install highlight
+sudo vi /etc/asciidoc/asciidoc.conf
+----
+
+== C 코드 적기
+
+[source,c]
+----
+#include <stdio.h>
+
+int main(int argc, char* argv[])
+{
+	printf("Hello World\n");
+	return 0;
+}
+----
