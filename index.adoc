@@ -1,3 +1,5 @@
 == index.adoc
 
 created in Github
+
+add link : https://zune2.github.io/mydoc
