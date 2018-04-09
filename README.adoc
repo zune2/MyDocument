@@ -9,3 +9,6 @@ README 문서입니다.
 == Title 2
 
 제목2 내용
+
+== Insert image
+image::test.jpeg[]
