@@ -3,3 +3,7 @@
 created in Github
 
 add link : https://zune2.github.io/mydoc
+
+== link test
+1. link:source_test.html[source_test.html]
+
