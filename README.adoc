@@ -1,4 +1,7 @@
 = README
+:toc:
+:icons:
+:numbered:
 
 README 문서입니다.
 
