@@ -7,15 +7,15 @@
 <meta name="generator" content="Asciidoctor 1.5.6.1">
 <title>index.adoc</title>
 <style>
-/* Based on Lumen from Bootswatch (http://bootswatch.com/lumen/) */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
+/* Based on Cerulean from Bootswatch (http://bootswatch.com/cerulean/) */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
 
 /* document body (contains all content) */
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #666666;
   background-color: #ffffff;
   margin-left: 10%;
   margin-right: 10%;
@@ -37,10 +37,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: inherit;
-  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   line-height: 1.1;
-  color: #333333;
+  color: #2d2d2d;
 }
 h1,
 h2,
@@ -55,8 +55,8 @@ h6 {
   margin-bottom: 10px;
 }
 h1 {
-  font-size: 3em; 
-/*   font-size: 36px;  */
+  font-size: 4em;
+/*   font-size: 36px; */
 }
 h2 {
   font-size: 30px;
@@ -80,7 +80,6 @@ h6 {
   margin: 0 0 10px;
 }
 p {
-/*   font-family: sans-serif; */
   margin: 0 0 10px;
 }
 
@@ -131,7 +130,6 @@ blockquote footer,
 blockquote small,
 blockquote .small {
   display: block;
-  font-size: 80%;
   line-height: 1.42857143;
   color: #999999;
 }
@@ -157,13 +155,12 @@ ol ol {
 
 /* links */
 a {
-  color: #158cba;
-  background-color: transparent;
+  color: #3399f3;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #158cba;
+  color: #3399f3;
   text-decoration: underline;
 }
 a:focus {
@@ -184,7 +181,7 @@ table {
   background-color: transparent;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   border-collapse: collapse;
 }
 table col[class*="col-"] {
@@ -209,7 +206,7 @@ caption {
 
 /* table header row */
 thead {
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #dddddd;
 }
 
 /* table header cell */
@@ -221,7 +218,7 @@ th {
 /* table footer */
 tfoot {
   color: #807F81;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
 }
 
 /* table cell */
@@ -261,7 +258,7 @@ kbd {
   font-size: 90%;
   color: #ffffff;
   background-color: #333333;
-  border-radius: 2px;
+  border-radius: 3px;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -304,8 +301,8 @@ img {
 #footer {
   margin-top: 22px;
   padding: 14px 16px;
-  color: #555555;
-  background-color: #f8f8f8;
+  color: #777777;
+  background-color: #eeeeee;
 }
 
 /* responsiveness fixes */
@@ -315,7 +312,22 @@ video {
 
 /* table of Contents sidebar */
 #toctitle {
-  color: #ffffff;
+  display: none;
+}
+
+#toc {
+  margin-top: 20px;
+  background-image: -webkit-linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+  background-image: -o-linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(50%, #eeeeee), to(#e4e4e4));
+  background-image: linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
+  -webkit-filter: none;
+          filter: none;
+  border: 1px solid #d5d5d5;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 4px 4px;
 }
 
 #toc ul {
@@ -331,17 +343,15 @@ video {
 }
 
 #toc a {
-  background-color: #f8f8f8;
+  color: #777777;
   float: left;
-  color: #555555;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 #toc li a:hover {
-  background-color: #eeeeee;
-  text-decoration: none;
+  color: #3399f3;
 }
 
 #toc:after {
