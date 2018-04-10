@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.6.1">
-<title>README</title>
-<style>
-/* Based on Lumen from Bootswatch (http://bootswatch.com/lumen/) */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
+/* Based on Cerulean from Bootswatch (http://bootswatch.com/cerulean/) */
 
 /* document body (contains all content) */
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
@@ -37,10 +27,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: inherit;
-  font-weight: 400;
-  line-height: 1.1;
-  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #317eac;
 }
 h1,
 h2,
@@ -55,8 +45,8 @@ h6 {
   margin-bottom: 10px;
 }
 h1 {
-  font-size: 3em; 
-/*   font-size: 36px;  */
+  font-size: 4em;
+/*   font-size: 36px; */
 }
 h2 {
   font-size: 30px;
@@ -131,7 +121,6 @@ blockquote footer,
 blockquote small,
 blockquote .small {
   display: block;
-  font-size: 80%;
   line-height: 1.42857143;
   color: #999999;
 }
@@ -157,13 +146,12 @@ ol ol {
 
 /* links */
 a {
-  color: #158cba;
-  background-color: transparent;
+  color: #2fa4e7;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #158cba;
+  color: #157ab5;
   text-decoration: underline;
 }
 a:focus {
@@ -184,7 +172,7 @@ table {
   background-color: transparent;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   border-collapse: collapse;
 }
 table col[class*="col-"] {
@@ -209,7 +197,7 @@ caption {
 
 /* table header row */
 thead {
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #dddddd;
 }
 
 /* table header cell */
@@ -221,7 +209,7 @@ th {
 /* table footer */
 tfoot {
   color: #807F81;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #dddddd;
 }
 
 /* table cell */
@@ -261,7 +249,7 @@ kbd {
   font-size: 90%;
   color: #ffffff;
   background-color: #333333;
-  border-radius: 2px;
+  border-radius: 3px;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -304,8 +292,8 @@ img {
 #footer {
   margin-top: 22px;
   padding: 14px 16px;
-  color: #555555;
-  background-color: #f8f8f8;
+  color: #ffffff;
+  background-color: #2fa4e7;
 }
 
 /* responsiveness fixes */
@@ -315,7 +303,23 @@ video {
 
 /* table of Contents sidebar */
 #toctitle {
-  color: #ffffff;
+  display: none;
+}
+
+#toc {
+  margin-top: 20px;
+  background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+  background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #2fa4e7), to(#1d9ce5));
+  background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+  border-bottom: 1px solid #178acc;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px 4px;
 }
 
 #toc ul {
@@ -331,16 +335,15 @@ video {
 }
 
 #toc a {
-  background-color: #f8f8f8;
+  color: #ffffff;
   float: left;
-  color: #555555;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 #toc li a:hover {
-  background-color: #eeeeee;
+  background-color: #178acc;
   text-decoration: none;
 }
 
@@ -357,52 +360,3 @@ table {
   width: 55vw!important;
   font-size: 3vw;
 }
-
-</style>
-</head>
-<body class="article">
-<div id="header">
-<h1>README</h1>
-</div>
-<div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>README 문서입니다.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_title_1">Title 1</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>제목1 내용</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_title_2">Title 2</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>제목2 내용</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_insert_image">Insert image</h2>
-<div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="test.jpeg" alt="test">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="footer">
-<div id="footer-text">
-Last updated 2018-04-10 22:57:21 KST
-</div>
-</div>
-</body>
-</html>

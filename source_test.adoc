@@ -1,4 +1,5 @@
 = Source highlight 기능
+:source-highlighter: highlight
 :toc:
 :icons:
 :numbered:

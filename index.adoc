@@ -1,4 +1,10 @@
-== index.adoc
+= index.adoc
+:source-highlighter: highlight
+:toc:
+:icons:
+:numbered:
+:website: http://asciidoc.org/
+
 
 created in Github
 
